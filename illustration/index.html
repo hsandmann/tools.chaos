@@ -1,0 +1,41 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.js"></script>
+
+	<script src="../.math.js"></script>
+	<script src="./illustration.js"></script>
+	<style>
+
+		.right {
+			text-align: right;
+		}
+
+		#parameters, #initials, #repeating {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 20px;
+		}
+
+		INPUT {
+			width: 80px;
+			border-width: 0px 0px 1px 0px;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<select id="listFunctions"></select>
+		<div id="parameters"></div>
+		<div id="initials"></div>
+		<div id="repeating" class="right">
+			N <input id="n"    class="right"/><br>
+			step <input id="step" class="right"/>
+		</div>
+	</div>
+	<div id="mygraph"></div>
+</body>
+</html>
